@@ -1,0 +1,31 @@
+<ion-view view-title="Cadastro">
+  <ion-content>
+    <form>
+    	<label class="item item-input">
+    		<input type="text" placeholder="Nome" ng-model="evento.nome">
+    	</label>
+
+    	<label class="item item-input">
+    		<textarea placeholder="Descrição" ng-model="evento.descricao">
+    		</textarea>
+    	</label>
+
+    	<label class="item item-input">
+    		<input type="text" placeholder="Foto" ng-model="evento.foto">
+    	</label>
+
+    	<label class="item item-input">
+    		<input type="text" placeholder="Local" ng-model="evento.local">
+    	</label>
+
+		<label class="item item-input">
+    		<input type="text" placeholder="Data" ng-model="evento.data">
+    	</label>
+    	<div class="padding">
+	    	<button class="button button-block button-positive" ng-click="salvar(evento)">
+	    		Salvar Evento
+	    	</button>
+	    </div>
+    </form>
+  </ion-content>
+</ion-view>
